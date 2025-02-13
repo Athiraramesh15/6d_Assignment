@@ -15,11 +15,13 @@ function EmployeeDetailsForm() {
   const [errors, setErrors] = useState({});
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    //Validating phone number(10-digits) with regex
     if (name === "phoneNo" && !/^[0-9]{0,10}$/.test(value)) {
       errors.phoneNo = "Phone number must be 10 digits.";
     } else if (name === "email" && !/^\S+@\S+\.\S+$/.test(value)  && value) {
       errors.email = "Invalid email format.";
     } else {
+        //remove error when validation passes
       delete errors[name];
     }
 
@@ -35,6 +37,7 @@ function EmployeeDetailsForm() {
     e.preventDefault();
     const { firstName, lastName, dob, phoneNo, email, address } =
       employeeData;
+    //Validate mandatory fields
     if (
       !firstName ||
       !lastName ||
