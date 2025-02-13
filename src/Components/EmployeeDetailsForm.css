@@ -1,0 +1,73 @@
+.employee-form {
+  width: 450px;
+  margin: 60px auto;
+  padding: 25px;
+  background: rgb(157, 206, 214);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 6px;
+  text-align :left;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #000000;
+}
+
+textarea {
+  height: 120px;
+}
+
+.submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #277686;
+}
+
+.required {
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.error {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 5px; 
+  }
+  
